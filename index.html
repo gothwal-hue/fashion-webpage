@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Premium Clothes Designer</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Fixed WhatsApp Icon -->
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="whatsapp-float" aria-label="Contact on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header>
+        <img src="deepali_pre_logo_white1.png" alt="Designer Logo" class="logo" />
+        <nav>
+            <ul>
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Collection</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" tabindex="0" aria-label="Introduction section">
+            <h1>Designs that Speak, <br />Before You Do!</h1>
+            <p>Each piece is uniquely designed by Deepali, with the option to customize your own style just the way you envision.</p>
+            <a href="#gallery" class="cta" tabindex="0">Explore The Collection</a>
+        </section>
+
+        <section id="about" tabindex="0" aria-label="About the designer">
+            <h2>About The Designer</h2>
+            <p>My name is Deepali, a professional dress designer with a passion for creating unique, timeless pieces. To date, I have crafted over 123 stunning dresses, each tailored to perfection. I continue to design a variety of styles, bringing your vision to life with every creation.</p>
+        </section>
+
+        <section id="gallery" tabindex="0" aria-label="Featured dress collection">
+            <h2>Featured Collection</h2>
+            <div class="dress-card" tabindex="0">
+                <img src="dress 1.jpeg" alt="Elegant evening gown" />
+                <div class="info">
+                    <h3>Elegant Evening Gown</h3>
+                    <p>Flowing silk with subtle pastel hues, perfect for unforgettable nights.</p>
+                </div>
+            </div>
+            <div class="dress-card" tabindex="0">
+                <img src="dress 2.jpeg" alt="Casual chic dress" />
+                <div class="info">
+                    <h3>Casual Chic Dress</h3>
+                    <p>Lightweight cotton with clean lines designed for everyday sophistication.</p>
+                </div>
+            </div>
+            <div class="dress-card" tabindex="0">
+                <img src="dress 3.jpeg" alt="Bold statement dress" />
+                <div class="info">
+                    <h3>Bold Statement Dress</h3>
+                    <p>Vibrant colors and fresh silhouettes to captivate and inspire.</p>
+                </div>
+            </div>
+            <div class="dress-card" tabindex="0">
+                <img src="dress 4.jpeg" alt="Elegant cocktail dress" />
+                <div class="info">
+                    <h3>Elegant Cocktail Dress</h3>
+                    <p>Timeless charm with a modern edge, tailored for special occasions.</p>
+                </div>
+            </div>
+            <div class="dress-card" tabindex="0">
+                <img src="dress 5.jpeg" alt="Elegant cocktail dress" />
+                <div class="info">
+                    <h3>Elegant Cocktail Dress</h3>
+                    <p>Timeless charm with a modern edge, tailored for special occasions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+    <div class="wrapper">
+        <div class="container">
+            <input type="radio" name="slider" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">1</div>
+                    <div class="discreaption">
+                        <h4>NAME-YASHWANT GOTHWAL</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, necessitatibus.</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slider" id="c2" >
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">2</div>
+                    <div class="discreaption">
+                        <h4>HIRE ME!</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, necessitatibus.</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slider" id="c3" >
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon">3</div>
+                    <div class="discreaption">
+                        <h4>PROJECTS!</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, necessitatibus.</p>
+                    </div>
+                </div>
+            </label>
+
+            <input type="radio" name="slider" id="c4" >
+            <label for="c4" class="card">
+                <div class="row">
+                    <div class="icon">4</div>
+                    <div class="discreaption">
+                        <h4>SERVIESE</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, necessitatibus.</p>
+                    </div>
+                </div>
+            </label>
+
+        </div>
+    </div>
+    </section>
+
+        <section id="contact" tabindex="0" aria-label="Contact form section">
+            <h2>Contact</h2>
+            <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will get back soon.'); this.reset();">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" />
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required aria-required="true" />
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message..." required aria-required="true"></textarea>
+                <button type="submit" aria-label="Send message">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="deepali-footer">
+        <h3><img src="deepuuu.png" alt="Deepali Designs Logo"></h3>
+        <p>Crafting confidence, one dress at a time.</p>
+        <div class="social-icons">
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" aria-label="WhatsApp"><img src="watsapp_icon.png" alt="WhatsApp"></a>
+            <a href="https://www.youtube.com/in/deepali-profile" target="_blank" aria-label="YouTube"><img src="youtube_icon.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/deepali_username" target="_blank" aria-label="Instagram"><img src="Instagram_icon.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/deepali-profile" target="_blank" aria-label="LinkedIn"><img src="linked_in_icon.png" alt="LinkedIn"></a>
+        </div>
+        <p class="copyright">© 2025 Deepali Designs. All rights reserved.</p>
+    </footer>
+
+    <!-- Zoom Overlay -->
+    <div id="zoomOverlay" aria-modal="true" role="dialog" tabindex="-1" aria-label="Image zoom view">
+        <button class="closeBtn" aria-label="Close zoom view">&times;</button>
+        <img src="" alt="" />
+    </div>
+
+    <script src="html.js"></script>
+</body>
+</html>
+
+
+
+
+
+
